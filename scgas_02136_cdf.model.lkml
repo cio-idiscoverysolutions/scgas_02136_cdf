@@ -10,4 +10,6 @@ include: "*.dashboard"
 include: "*.view"
 
 # Add Views as Standalone so visible in Explore
-explore: questionnairedata_split {}
+explore: questionnairedata_split {
+  from: questionnairedata_split
+}
