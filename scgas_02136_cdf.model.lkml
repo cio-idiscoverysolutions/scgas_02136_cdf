@@ -11,5 +11,6 @@ include: "*.view"
 
 # Add Views as Standalone so visible in Explore
 explore: questionnairedata_split {
+  label: "Raw Questionnaire Data"
   from: questionnairedata_split
 }

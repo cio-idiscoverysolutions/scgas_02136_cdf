@@ -1,54 +1,65 @@
 view: questionnairedata_split {
+  label: "Raw Questionnaire Data"
   # # You can specify the table name if it's different from the view name:
   # sql_table_name: my_schema_name.tester ;;
   #
   # # Define your dimensions and measures here, like this:
    dimension: filepath {
-     type: string
+    label: "XML File Path"
+    type: string
      sql: ${TABLE}.filepath ;;
    }
   #
    dimension: PlaintiffNumber {
-     type: number
+    label: "Plaintiff No."
+    type: number
      sql: ${TABLE}.PlaintiffNumber ;;
    }
   #
    dimension: QuestionID {
-     type: string
+    label: "Question XML ID"
+    type: string
      sql: ${TABLE}.QuestionID ;;
    }
   #
   dimension: QuestionText {
+    label: "Question Text"
     type: string
     sql: ${TABLE}.QuestionText ;;
   }
   #
   dimension: Answer {
+    label: "Original Answer"
     type: string
     sql: ${TABLE}.Answer ;;
   }
   #
   dimension: ids_Question_Ref {
+    label: "iDS Question ID"
     type: string
     sql: ${TABLE}.ids_Question_Ref ;;
   }
   #
   dimension: Date_Logged {
+    label: "Date of Load"
     type: date
     sql: ${TABLE}.Date_Logged ;;
   }
   #
   dimension: CuratedAnswer {
+    label: "Curated Answer"
     type: string
     sql: ${TABLE}.CuratedAnswer ;;
   }
   #
   dimension: IDS_Dupe {
+    label: "iDS Dupe Flag"
     type: string
     sql: ${TABLE}.IDS_Dupe ;;
   }
   #
   dimension: BasicCuration {
+    label: "Basic Curation"
     type: string
     sql: ${TABLE}.BasicCuration ;;
   }
