@@ -8,7 +8,7 @@ view: questionnairedata_split {
      sql: ${TABLE}.filepath ;;
    }
   #
-   dimension: lifetime_orders {
+   dimension: PlaintiffNumber {
      type: number
      sql: ${TABLE}.PlaintiffNumber ;;
    }
@@ -17,6 +17,11 @@ view: questionnairedata_split {
      type: string
      sql: ${TABLE}.QuestionID ;;
    }
+  #
+  dimension: QuestionText {
+    type: string
+    sql: ${TABLE}.QuestionText ;;
+  }
   #
   dimension: Answer {
     type: string
