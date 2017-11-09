@@ -66,7 +66,12 @@ view: questionnairedata_split {
   #
   measure: same_answer_count {
     type: count
-  }
+   }
+
+  measure: Distinct_Plaintiffs {
+    type: count_distinct
+    sql: ${TABLE}.PlaintiffNumber ;;
+   }
   # measure: total_lifetime_orders {
   #   description: "Use this for counting lifetime orders across many users"
   #   type: sum
