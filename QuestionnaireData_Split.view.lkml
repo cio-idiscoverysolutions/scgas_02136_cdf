@@ -53,6 +53,9 @@ view: questionnairedata_split {
     sql: ${TABLE}.BasicCuration ;;
   }
   #
+  measure: same_answer_count {
+    type: count
+  }
   # measure: total_lifetime_orders {
   #   description: "Use this for counting lifetime orders across many users"
   #   type: sum
