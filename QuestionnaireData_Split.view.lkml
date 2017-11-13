@@ -64,6 +64,12 @@ view: questionnairedata_split {
     sql: ${TABLE}.BasicCuration ;;
   }
   #
+  dimension: AnswerLength {
+    label: "AnsweAnswerLengthr Length"
+    type: number
+    sql: ${TABLE}.AnswerLength ;;
+  }
+  #
   measure: same_answer_count {
     type: count
    }
