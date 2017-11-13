@@ -65,7 +65,7 @@ view: questionnairedata_split {
   }
   #
   dimension: AnswerLength {
-    label: "AnsweAnswerLengthr Length"
+    label: "Answer Length"
     type: number
     sql: ${TABLE}.AnswerLength ;;
   }
