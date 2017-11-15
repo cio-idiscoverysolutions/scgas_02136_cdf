@@ -78,6 +78,11 @@ view: questionnairedata_split {
     type: count_distinct
     sql: ${TABLE}.PlaintiffNumber ;;
    }
+
+  measure: Distinct_QuestionID {
+    type: count_distinct
+    sql: ${TABLE}.ids_Question_Ref ;;
+  }
   # measure: total_lifetime_orders {
   #   description: "Use this for counting lifetime orders across many users"
   #   type: sum
