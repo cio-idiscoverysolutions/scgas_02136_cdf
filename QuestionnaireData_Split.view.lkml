@@ -13,6 +13,7 @@ view: questionnairedata_split {
    dimension: PlaintiffNumber {
     label: "Plaintiff No."
     type: number
+    value_format: "0"
      sql: ${TABLE}.PlaintiffNumber ;;
    }
   #
