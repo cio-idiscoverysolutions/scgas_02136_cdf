@@ -71,6 +71,29 @@ view: questionnairedata_split {
     sql: ${TABLE}.AnswerLength ;;
   }
   #
+  dimension: HasCuratedAnswer {
+    label: "Has Curated Answer"
+    type: number
+    sql: ${TABLE}.HasCuratedAnswer ;;
+  }
+  #
+  dimension: CuratedOn {
+    label: "Curated On"
+    type: string
+    sql: ${TABLE}.CuratedOn ;;
+  }
+  #
+  dimension: CuratedBy {
+    label: "Curated By"
+    type: string
+    sql: ${TABLE}.CuratedBy ;;
+  }
+  #
+  dimension: iDS_SpecialHandling {
+    label: "iDS Special Handling"
+    type: number
+    sql: ${TABLE}.iDS_SpecialHandling ;;
+  }
   measure: same_answer_count {
     type: count
    }
