@@ -53,12 +53,7 @@ view: questionnairedata_split {
     sql: ${TABLE}.CuratedAnswer ;;
   }
   #
-  dimension: IDS_Dupe {
-    label: "iDS Dupe Flag"
-    type: string
-    sql: ${TABLE}.IDS_Dupe ;;
-  }
-  #
+   #
   dimension: BasicCuration {
     label: "Basic Curation"
     type: string
