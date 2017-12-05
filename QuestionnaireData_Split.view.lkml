@@ -85,7 +85,7 @@ view: questionnairedata_split {
   }
   #
   dimension: iDS_SpecialHandling {
-    label: "iDS Special Handling"
+    label: "iDS Special Handling (NULL = No issues, 1 = Exact Dupe, 2 = Inconsistent)"
     type: number
     sql: ${TABLE}.iDS_SpecialHandling ;;
   }
