@@ -56,6 +56,11 @@ view: 006_plaintiff_search {
     drill_fields: [plaintiff_name, file_name]
   }
 
+  measure: Distinct_Plaintiffs {
+    type: count_distinct
+    sql: ${TABLE}.Plaintiff_Number ;;
+  }
+
   dimension: Firm_of_Record {
     type:  string
     sql: ${TABLE}.Firm_of_Record ;;
