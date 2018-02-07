@@ -55,4 +55,9 @@ view: 006_plaintiff_search {
     type: count
     drill_fields: [plaintiff_name, file_name]
   }
+
+  dimension: Firm_of_Record {
+    type:  string
+    sql: ${TABLE}.Firm_of_Record ;;
+  }
 }
