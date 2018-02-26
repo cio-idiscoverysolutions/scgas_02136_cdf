@@ -12,7 +12,13 @@ include: "*.view"
 # Add Views as Standalone so visible in Explore
 explore: questionnairedata_split {
   label: "Raw Questionnaire Data"
-  from: questionnairedata_split}
+  from: questionnairedata_split
+  join: 006_plaintiff_search{
+    type: left_outer
+    sql_on: ${questionnairedata_split.PlaintiffNumber} = ${006_plaintiff_search.plaintiff_number} ;;
+    relationship: many_to_many
+    view_label: "006_plaintiff_search"
+  }}
 
 explore: 006_plaintiff_search {
   label: "006 Plaintiff Search"
