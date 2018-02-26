@@ -36,6 +36,13 @@ view: i_ds_vw_plaintiff_questionnaire_preview {
     sql: ${TABLE}.Ingested_Record ;;
   }
 
+  dimension: ingested_record_text {
+    sql: case
+      WHEN ${TABLE}.ingested_record = 0 THEN 'N'
+                   ELSE 'Y'
+            END ;;
+  }
+
   dimension: plaintiff_number {
     type: string
     sql: ${TABLE}.PlaintiffNumber ;;
