@@ -51,6 +51,16 @@ view: i_ds_vw_plaintiff_questionnaire_preview {
     sql: ${TABLE}.XML_Vol ;;
   }
 
+  dimension: Plaintiff_Name {
+    type:  string
+    sql: ${TABLE}.Plaintiff_Name ;;
+  }
+
+  dimension: Firm_of_record {
+    type:  string
+    sql: ${TABLE}.Firm_of_Record ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [file_name]
