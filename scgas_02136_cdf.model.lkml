@@ -14,7 +14,7 @@ explore: questionnairedata_split {
   join: 006_plaintiff_search {
     type:  left_outer
     relationship: many_to_many
-    sql_on: ${questionnairedata_split.PlaintiffNumber} = ${006_plaintiff_search.plaintiff_number}.Plaintiff_Number};;
+    sql_on: ${questionnairedata_split.PlaintiffNumber} = ${006_plaintiff_search.plaintiff_number};;
   }}
 
 
