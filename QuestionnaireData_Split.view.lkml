@@ -17,6 +17,12 @@ view: questionnairedata_split {
      sql: ${TABLE}.PlaintiffNumber ;;
    }
   #
+  dimension: PlaintiffName {
+    label: "Plaintiff Name"
+    type:  string
+    sql:  ${TABLE}.PlaintiffName ;;
+  }
+  #
    dimension: QuestionID {
     label: "Question XML ID"
     type: string
