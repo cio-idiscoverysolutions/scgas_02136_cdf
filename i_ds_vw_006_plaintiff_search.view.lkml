@@ -65,4 +65,16 @@ view: 006_plaintiff_search {
     type:  string
     sql: ${TABLE}.Firm_of_Record ;;
   }
+
+  dimension: PDF_Plaintiff_Name {
+    type:  string
+    sql:  ${TABLE}.PDF_Plaintiff_Name ;;
+  }
+
+  dimension: PDF_Received_Date {
+    type:  string
+    sql:  ${TABLE}.PDF_Received_Date ;;
+  }
+
+
 }
