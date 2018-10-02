@@ -17,6 +17,10 @@ explore: questionnairedata_split {
   }}
 
 
+ explore: i_ds_vw_documents_received {
+    label: "Documents Received"
+    from:  i_ds_vw_documents_received }
+
 
 explore: 006_plaintiff_search {
   label: "006 Plaintiff Search"
