@@ -114,6 +114,12 @@ view: questionnairedata_split {
     sql: ${TABLE}.Firm_Of_Record ;;
   }
 
+dimension: LatestResponse {
+  type:  string
+  sql: ${TABLE}.LatestResponse ;;
+}
+
+
   # measure: total_lifetime_orders {
   #   description: "Use this for counting lifetime orders across many users"
   #   type: sum
