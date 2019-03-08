@@ -45,6 +45,7 @@ view: questionnairedata_split {
     label: "iDS Question ID"
     type: string
     suggestable: yes
+    suggest_persist_for: "0 minutes"
     sql: ${TABLE}.ids_Question_Ref ;;
   }
   #
