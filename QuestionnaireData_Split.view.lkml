@@ -44,6 +44,7 @@ view: questionnairedata_split {
   dimension: ids_Question_Ref {
     label: "iDS Question ID"
     type: string
+    suggestable: yes
     sql: ${TABLE}.ids_Question_Ref ;;
   }
   #
