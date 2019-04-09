@@ -35,6 +35,13 @@ view: i_ds_vw_documents_received {
     sql: ${TABLE}.Staged_Date ;;
   }
 
+dimension: Date_Served {
+  type:  date
+  sql: ${TABLE}.Date_Served ;;
+}
+
+
+
   measure: count {
     type: count
     drill_fields: [plaintiff_name, file_name]
