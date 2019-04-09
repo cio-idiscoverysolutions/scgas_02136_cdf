@@ -77,4 +77,9 @@ view: 006_plaintiff_search {
   }
 
 
+dimension: Date_served {
+  type:  date
+  sql:  ${TABLE}.date_served ;;
+}
+
 }
