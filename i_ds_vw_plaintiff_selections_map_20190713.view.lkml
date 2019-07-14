@@ -11,13 +11,20 @@ view: i_ds_vw_plaintiff_selections_map_20190713 {
     sql: ${TABLE}."Group" ;;
   }
 
+
+  dimension: loc {
+    type: location
+    sql_latitude:${TABLE}.Lat ;;
+    sql_longitude:${TABLE}.Long ;;
+  }
+
   dimension: lat {
-    type: string
+    type: number
     sql: ${TABLE}.Lat ;;
   }
 
   dimension: long {
-    type: string
+    type: number
     sql: ${TABLE}.Long ;;
   }
 
