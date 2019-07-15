@@ -66,6 +66,13 @@ dimension: Plaintiff_count {
     sql: ${TABLE}."LostValue_Count" ;;
   }
 
+  dimension: LostWages_count {
+    type:  number
+    sql: ${TABLE}."LostWages_Count" ;;
+  }
+
+
+
   dimension: PhysicalInjury_count {
     type:  number
     sql: ${TABLE}."PhysicalInjury_Count" ;;
