@@ -88,51 +88,51 @@ dimension: accuracy_score {
 
 dimension: Q24_AcuteInjury {
   type:  string
-  sql: #${TABLE}."Q24_AcuteInjury" ;;
+  sql: ${TABLE}."Q24_AcuteInjury" ;;
 }
 
   dimension: Q25_ChronicInjury {
     type:  string
-    sql: #${TABLE}."Q25_ChronicInjury" ;;
+    sql: ${TABLE}."Q25_ChronicInjury" ;;
   }
 
   dimension: Q48_PropertyDamage {
     type:  string
-    sql: #${TABLE}."Q48_PropertyDamage" ;;
+    sql: ${TABLE}."Q48_PropertyDamage" ;;
   }
 
   dimension: Q49_LostValue {
     type:  string
-    sql: #${TABLE}."Q49_LostValue" ;;
+    sql: ${TABLE}."Q49_LostValue" ;;
   }
 
   dimension: Q53_LostWages {
     type:  string
-    sql: #${TABLE}."Q53_LostWages" ;;
+    sql: ${TABLE}."Q53_LostWages" ;;
   }
 
 
   dimension: Q56_PhysicalInjury {
     type:  string
-    sql: #${TABLE}."Q56_PhysicalInjury" ;;
+    sql: ${TABLE}."Q56_PhysicalInjury" ;;
   }
 
 
   dimension: Q59_MentalInjury {
     type:  string
-    sql: #${TABLE}."Q59_MentalInjury" ;;
+    sql: ${TABLE}."Q59_MentalInjury" ;;
   }
 
 
   dimension: Q63_MedicalMonitoring {
     type:  string
-    sql: #${TABLE}."Q63_MedicalMonitoring" ;;
+    sql: ${TABLE}."Q63_MedicalMonitoring" ;;
   }
 
 
   dimension: Q64_WrongfulDeath {
     type:  string
-    sql: #${TABLE}."Q64_WrongfulDeath" ;;
+    sql: ${TABLE}."Q64_WrongfulDeath" ;;
   }
 
 
