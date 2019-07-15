@@ -6,6 +6,13 @@ view: i_ds_vw_plaintiff_selections_map_20190713 {
     sql: ${TABLE}.Address ;;
   }
 
+  dimension: accuracy_score {
+    type: number
+    sql: ${TABLE}."Accuracy Score" ;;
+  }
+
+
+
   dimension: group {
     type: string
     sql: ${TABLE}."Group" ;;
