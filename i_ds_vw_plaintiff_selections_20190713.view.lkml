@@ -81,6 +81,11 @@ view: i_ds_vw_plaintiff_selections_20190713 {
     sql: ${TABLE}."Response to Q47G" ;;
   }
 
+dimension: accuracy_score {
+  type: number
+  sql: ${TABLE}."Accuracy Score" ;;
+}
+
   measure: count {
     type: count
     drill_fields: [name]
