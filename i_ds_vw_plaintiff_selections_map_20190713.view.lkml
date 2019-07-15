@@ -4,7 +4,7 @@ view: i_ds_vw_plaintiff_selections_map_20190713 {
   dimension: Address {
     type: string
     sql: ${TABLE}.Address ;;
-    html:  <a href="https://idssda.looker.com/dashboards/327?%20Address=%22{{Address._value | encode_url }}%22" target="_new">{{value}} ;;
+    html:  <a href="https://idssda.looker.com/dashboards/327?Address=%22{{Address._value | encode_url }}%22" target="_new">{{value}} ;;
   }
 
   dimension: accuracy_score {
