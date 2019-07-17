@@ -49,6 +49,8 @@ view: i_ds_vw_plaintiff_selections_20190713 {
   dimension: plaintiff_id {
     type: string
     sql: ${TABLE}."Plaintiff ID" ;;
+    html:  <a href="https://idssda.looker.com/dashboards/258?Plaintiff%20Number.:={{Plaintiff_id._value | encode_url }}" target="_blank">{{value}}  ;;
+
   }
 
   dimension: plaintiffs_counsel {
