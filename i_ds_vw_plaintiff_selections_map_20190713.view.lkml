@@ -31,6 +31,11 @@ view: i_ds_vw_plaintiff_selections_map_20190713 {
     sql: ${TABLE}.Lat ;;
   }
 
+dimension: coordinates {
+  type:  string
+  sql: ${TABLE}."Coordinates" ;;
+}
+
   dimension: long {
     type: number
     sql: ${TABLE}.Long ;;
