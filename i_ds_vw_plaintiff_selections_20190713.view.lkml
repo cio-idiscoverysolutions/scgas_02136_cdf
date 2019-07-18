@@ -51,10 +51,10 @@ view: i_ds_vw_plaintiff_selections_20190713 {
     sql: ${TABLE}.Notes ;;
   }
 
-  dimension: plaintiff_id {
+  dimension: plaintiffid {
     type: string
-    sql: ${TABLE}."Plaintiff ID" ;;
-    html:  <a href="https://idssda.looker.com/dashboards/258?Plaintiff%20Number.:={{Plaintiff+id._value | encode_url }}" target="_blank">{{value}}  ;;
+    sql: ${TABLE}.PlaintiffID ;;
+    html:  <a href="https://idssda.looker.com/dashboards/258?Plaintiff%20Number.:={{Plaintiffid._value | encode_url }}" target="_blank">{{value}}  ;;
 
   }
 
