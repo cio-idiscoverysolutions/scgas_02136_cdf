@@ -24,7 +24,7 @@ explore: questionnairedata_split {
 
 explore: i_ds_vw_plaintiff_selections_map_20190713 {}
 
-explore: i_ds_vw_plaintiff_selections_20190713 {}
+
 
 explore: i_ds_vw_plaintiff_full_q_text_search {
   label: "i_ds_vw_plaintiff_full_q_text_search"
