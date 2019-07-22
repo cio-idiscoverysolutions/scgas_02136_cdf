@@ -41,6 +41,12 @@ view: i_ds_vw_plaintiff_selections_responses {
     sql: ${TABLE}.QuestionText ;;
   }
 
+  dimension: group {
+    type: string
+    sql: ${TABLE}."Group" ;;
+  }
+
+
   measure: count {
     type: count
     drill_fields: [plaintiff_name]
