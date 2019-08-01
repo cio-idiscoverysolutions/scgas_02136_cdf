@@ -30,6 +30,8 @@ explore: questionnairedata_split {
     from:  i_ds_vw_documents_received }
 
 
+explore: i_ds_vw_plume_map {}
+
 explore: i_ds_vw_plaintiff_selections_responses {}
 
 explore: i_ds_vw_plaintiff_selections_map_20190713 {}
