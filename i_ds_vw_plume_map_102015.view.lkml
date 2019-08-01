@@ -7,6 +7,11 @@ view: i_ds_vw_plume_map_102015 {
     map_layer_name: October
   }
 
+measure: PPM {
+  type:  sum
+  sql: ${TABLE}.PPM ;;
+
+}
 
   measure: count {
     type: count
