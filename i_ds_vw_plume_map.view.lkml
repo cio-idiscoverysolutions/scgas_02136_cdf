@@ -1,16 +1,12 @@
 view: i_ds_vw_plume_map {
   sql_table_name: dbo.iDS_vw_PlumeMap ;;
 
-  dimension: color_1 {
+  dimension: ID {
 #    type: string
-    sql: ${TABLE}.Color_1 ;;
+    sql: ${TABLE}.ID;;
     map_layer_name: October
   }
 
-  dimension: ppm {
-    type: number
-    sql: ${TABLE}.PPM ;;
-  }
 
   measure: count {
     type: count
