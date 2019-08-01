@@ -1,5 +1,5 @@
-view: i_ds_vw_plume_map {
-  sql_table_name: dbo.iDS_vw_PlumeMap ;;
+view: i_ds_vw_plume_map_102015 {
+  sql_table_name: dbo.iDS_vw_PlumeMap_102015 ;;
 
   dimension: ID {
 #    type: string
