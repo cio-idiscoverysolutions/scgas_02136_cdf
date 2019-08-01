@@ -19,7 +19,7 @@ explore: questionnairedata_split {
 
   map_layer: October {
     file: "October.topojson"
-   property_key: "OBJECTID"
+   property_key: "Color_1"
   }
 
 
