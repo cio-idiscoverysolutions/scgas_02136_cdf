@@ -32,7 +32,7 @@ view: i_ds_vw_plaintiff_selections_map_20190713 {
   }
 
   dimension: October {
-    sql: ${TABLE}.geometry ;;
+  #  sql: ${TABLE}.geometry ;;
     map_layer_name: October
   }
 
