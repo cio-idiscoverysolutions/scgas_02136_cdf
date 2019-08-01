@@ -22,7 +22,25 @@ explore: questionnairedata_split {
    property_key: "id"
   }
 
+  map_layer: November {
+    file: "November.topojson"
+    property_key: "id"
+  }
 
+  map_layer: December {
+    file: "December.topojson"
+    property_key: "id"
+  }
+
+  map_layer: January {
+    file: "January.topojson"
+    property_key: "id"
+  }
+
+  map_layer: February {
+    file: "February.topojson"
+    property_key: "id"
+  }
 
 
  explore: i_ds_vw_documents_received {
