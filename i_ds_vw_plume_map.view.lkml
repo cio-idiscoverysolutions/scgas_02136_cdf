@@ -3,8 +3,8 @@ view: i_ds_vw_plume_map {
 
   dimension: color_1 {
 #    type: string
-    sql: ${TABLE}.Color_1
-    map_layer_name: October ;;
+    sql: ${TABLE}.Color_1 ;;
+    map_layer_name: October
   }
 
   dimension: ppm {
